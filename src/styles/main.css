@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  direction: ltr;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header {
+  background: #222;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav a {
+  color: #fff;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.nav-right button {
+  margin-right: 10px;
+}
+
+.main-content {
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* ... هر استایل اضافه‌ای که خواستی اینجا بگذار */
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  box-shadow: 0 0 0px 1000px #334155 inset !important; /* رنگ slate-700 */
+  -webkit-text-fill-color: #ffffff !important;
+  transition: background-color 9999s ease-in-out 0s;
+}
